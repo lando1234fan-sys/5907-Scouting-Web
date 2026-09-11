@@ -1,0 +1,24 @@
+{
+  "name": "Shambots Scouting",
+  "short_name": "Scouting",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#a8baf9",
+  "theme_color": "#2c3e50",
+  "description": "Offline scouting data collection for Shambots.",
+  "icons": [
+    {
+      "src": "./Assets/CCrest.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./Assets/bots.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ]
+}

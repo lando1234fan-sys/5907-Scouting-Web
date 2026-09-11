@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shambots Scouting</title>
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Shambots Scouting">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./Assets/CCrest.png">
     <!-- QR Code Generation -->
     <script src="./node_modules/qrcodejs/qrcode.min.js"></script>
     <!-- HTML5 QR Code Scanner -->
@@ -745,6 +751,14 @@
             document.getElementById('reader').style.display = 'none';
             alert("QR Code scanned successfully! Click 'Merge Imported Data' to save.");
         }, (err) => {});
+    }
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('./sw.js').catch(error => {
+                console.warn('Offline app cache could not be enabled:', error);
+            });
+        });
     }
 </script>
 </body>
