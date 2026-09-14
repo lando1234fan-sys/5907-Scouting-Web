@@ -1,0 +1,28 @@
+{
+  "name": "5907-scouting-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sw.js",
+  "dependencies": {
+    "@capacitor/android": "^8.5.1",
+    "@capacitor/cli": "^8.5.1",
+    "@capacitor/core": "^8.5.1",
+    "html5-qrcode": "^2.3.8",
+    "qrcodejs": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lando1234fan-sys/5907-Scouting-Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lando1234fan-sys/5907-Scouting-Web/issues"
+  },
+  "homepage": "https://github.com/lando1234fan-sys/5907-Scouting-Web#readme"
+}

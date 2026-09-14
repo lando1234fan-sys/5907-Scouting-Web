@@ -41,6 +41,8 @@
         button.action-btn:hover { background: #2ecc71; }
         button.secondary-btn { background: #3498db; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; font-size: 16px; width: 100%; margin-bottom: 10px; }
         button.secondary-btn:hover { background: #2980b9; }
+        button.danger-btn { background: #c0392b; }
+        button.danger-btn:hover { background: #a93226; }
         button.small-btn { background: #e67e22; padding: 8px 12px; font-size: 14px; margin: 2px; border-radius: 4px; color: white; border: none; cursor: pointer; }
         button.small-btn:hover { background: #d35400; }
         
@@ -417,6 +419,7 @@
         <p style="text-align:center; margin:10px 0;">OR</p>
         <textarea id="importPayload" rows="3" placeholder="Paste manual JSON data here..."></textarea>
         <button class="action-btn secondary-btn" onclick="importData()">3. Merge Imported Data</button>
+        <button class="action-btn danger-btn" onclick="deleteAllScoutingData()">Delete All Scouting Data</button>
     </div>
 </div>
 
@@ -738,6 +741,14 @@
         } catch (e) {
             alert("Invalid data format.");
         }
+    }
+
+    function deleteAllScoutingData() {
+        if (!confirm('Delete all match and pit scouting data? This cannot be undone.')) return;
+
+        localStorage.removeItem('frcMatch');
+        localStorage.removeItem('frcPit');
+        alert('All scouting data has been deleted.');
     }
 
     let html5QrcodeScanner;

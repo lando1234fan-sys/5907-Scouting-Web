@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Shambots Scouting</string>
+    <string name="title_activity_main">Shambots Scouting</string>
+    <string name="package_name">com.shambots.scouting</string>
+    <string name="custom_url_scheme">com.shambots.scouting</string>
+</resources>
